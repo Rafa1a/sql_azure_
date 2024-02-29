@@ -98,6 +98,8 @@ Resultado : ![Select nas Tabelas](image/ORDEM.png)
  Atualizar o endereço do motorista com ID 756 : 
 - `UPDATE Drivers SET Endereço = 'Recife, Rua XYZ, 123' WHERE DriverID = 756`
   
+Resultado : ![Select nas Tabelas](image/UPDATE.png)
+
 ### Delete, Comandos : 
 
  Deletar o motorista com ID 756 :
