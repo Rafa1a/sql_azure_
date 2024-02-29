@@ -19,7 +19,7 @@ Para começar, siga os passos abaixo para criar o banco de dados SQL no Azure:
 
 Certifique-se de configurar corretamente as opções de segurança, firewall e acesso ao banco de dados para garantir a integridade e a segurança dos seus dados.
 
-Como para o caso de uso vamos : 
+Nesse caso de uso nós vamos : 
 
 1. No portal do Azure, navegue até o seu banco de dados SQL recém-criado.
 2. Na página de visão geral do banco de dados, selecione "Rede:Mostrar configurações de rede".
@@ -27,16 +27,21 @@ Como para o caso de uso vamos :
 4. Clique em "Adicionar IP" para adicionar seu endereço IP atual à lista de permissões.
 5. Se desejar, você também pode configurar regras de firewall adicionais para permitir acesso de outros endereços IP específicos ou intervalos de endereços.
 
-## Conectar com o banco
-Execute o comando no PowerShell ou Bash dentro do azure : 
+## Conectar com o Banco
 
-az sql db show-connection-string --client sqlcmd --name <nome do banco>
+Execute o comando no PowerShell ou Bash dentro do Azure:
+
+az sql db show-connection-string --client sqlcmd --name `<nome do banco>`
 
 Resposta é algo como : 
+
 `sqlcmd -S tcp:fullsstackfacu_teste.database.windows.net,1455 -d fullstack -U <username> -P <password> -N -l 30`
+
 Vamos conectar com o banco executando o comando acima :
 
 ![Conectando ao Banco de Dados SQL no Azure](image/conectando_banco.sql.png)
+
+Certifique-se de substituir `<nome do banco>`, `<username>` e `<password>` pelos valores reais do seu banco de dados.
 
 ## Sobre o Projeto
 
