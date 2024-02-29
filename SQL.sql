@@ -85,3 +85,19 @@ VALUES (1003, 'Empresa ZZZ', 'ZZZ LTDA', 'Rua ZZZ, 789', '(33) 5555-1234');
 INSERT INTO Orders (OrderID, ClientID, DriverID, DetalhesPedido, DataEntrega, Status) 
 VALUES (5003, 1003, 756, 'Detalhes do Pedido ZZZ', '2024-03-15', 'Pendente');
 
+/*SELECTS*/
+ SELECT * FROM Drivers;
+ SELECT * FROM Clients;
+ SELECT * FROM Orders;
+ /*FILTROS*/
+ SELECT * FROM Drivers WHERE Endereço LIKE '%São Paulo%';
+ SELECT * FROM Clients WHERE Empresa = 'ABC LTDA';
+ SELECT * FROM Orders WHERE Status = 'Pendente';
+ /*ORDENAR*/
+ SELECT * FROM Drivers ORDER BY Nome;
+ SELECT * FROM Clients ORDER BY ClientID DESC;
+ SELECT * FROM Orders ORDER BY DataEntrega;
+ /*UPDATE E DELETE*/
+ UPDATE Drivers SET Endereço = 'Recife, Rua XYZ, 123' WHERE DriverID = 757
+ DELETE FROM Orders WHERE DriverID = 756;
+ DELETE FROM Drivers WHERE DriverID = 756;
