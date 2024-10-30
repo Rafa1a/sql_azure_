@@ -1,5 +1,5 @@
 # Projeto Banco de Dados SQL no Azure
-
+ 
 ## Criação do Banco de Dados SQL no Azure
 
 Para começar, siga os passos abaixo para criar o banco de dados SQL no Azure:
